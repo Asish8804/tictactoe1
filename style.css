@@ -1,0 +1,78 @@
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: rgb(22, 192, 178);
+  text-align: center;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 10px;
+}
+
+.controls {
+  margin: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  margin: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  background-color: black;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: black;
+}
+
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 100px);
+  grid-gap: 5px;
+  margin: 20px auto;
+  justify-content: center;
+}
+
+.cell {
+  width: 100px;
+  height: 100px;
+  font-size: 2rem;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid rgb(22, 192, 178);
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.3s;
+}
+
+.cell:hover {
+  background: #e0e0e0;
+}
+
+.cell.win {
+  background-color: #a60d5f;
+}
+
+#status {
+  font-size: 1.2rem;
+  margin-top: 10px;
+}
+
+@media (max-width: 500px) {
+  .board {
+    grid-template-columns: repeat(3, 80px);
+  }
+
+  .cell {
+    width: 80px;
+    height: 80px;
+    font-size: 1.5rem;
+  }
+}

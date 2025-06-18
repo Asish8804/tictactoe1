@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Ultimate Tic-Tac-Toe</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Tic-Tac-Toe</h1>
+  <div class="controls">
+    <button onclick="setMode('human')">2 Player</button>
+    <button onclick="setMode('computer')">Vs Computer</button>
+  </div>
+  <div class="board" id="board"></div>
+  <p id="status">Select a mode to begin</p>
+  <button id="restart" onclick="startGame()">Restart</button>
+
+  <script src="script.js"></script>
+</body>
+</html>
